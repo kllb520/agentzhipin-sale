@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下一个"BOSS直聘"？Agent经济爆发，"agentzhipin.com"等你来造！</title>
+    <meta name="description" content="agentzhipin.com + agentzhipin.cn 成套出售，对标bosszhipin，抢占Agent直聘品类第一入口">
+    <meta property="og:title" content="下一个"BOSS直聘"？Agent经济爆发，agentzhipin.com等你来造！">
+    <meta property="og:description" content="AI Agent招聘域名出售，.com+.cn双保险，即买即用，抢占品类入口">
+    <meta property="og:type" content="website">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --accent: #10b981;
+            --bg: #0f172a;
+            --card: #1e293b;
+            --text: #f8fafc;
+            --muted: #94a3b8;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            background: radial-gradient(ellipse at top, #1e293b 0%, #0f172a 70%);
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236366f1' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.4;
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 720px;
+            text-align: center;
+            animation: fadeUp 0.8s ease-out;
+        }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.5rem 1.25rem;
+            background: rgba(99, 102, 241, 0.15);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.05em;
+        }
+        h1 {
+            font-size: clamp(1.75rem, 5vw, 2.75rem);
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #6366f1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .domain-name {
+            display: block;
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            margin: 1.5rem 0;
+            padding: 1rem 2rem;
+            background: linear-gradient(90deg, #10b981, #6366f1, #10b981);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shine 3s linear infinite;
+            font-weight: 900;
+            letter-spacing: 0.02em;
+        }
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+        .subtitle {
+            font-size: 1.125rem;
+            color: var(--muted);
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .features {
+            text-align: left;
+            background: var(--card);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 2rem 0;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .feature-item:last-child { border-bottom: none; }
+        .feature-icon {
+            flex-shrink: 0;
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(16, 185, 129, 0.15);
+            border-radius: 0.5rem;
+            font-size: 1rem;
+        }
+        .feature-text {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--text);
+        }
+        .cta-section {
+            margin: 2.5rem 0;
+        }
+        .tagline {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+        .tagline-accent {
+            color: var(--accent);
+        }
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            text-decoration: none;
+            border-radius: 0.75rem;
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin: 1.5rem 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
+        }
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(99, 102, 241, 0.5);
+        }
+        .email-display {
+            font-family: ui-monospace, SFMono-Regular, monospace;
+            background: rgba(255,255,255,0.05);
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-size: 1.125rem;
+            color: var(--accent);
+            border: 1px dashed rgba(16, 185, 129, 0.3);
+            margin-top: 1rem;
+            display: inline-block;
+        }
+        .footer-note {
+            color: var(--muted);
+            font-size: 0.875rem;
+            margin-top: 3rem;
+            opacity: 0.7;
+        }
+        @media (max-width: 640px) {
+            .hero { padding: 1.5rem; }
+            .features { padding: 1.25rem; }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <div class="badge">🔥 稀缺域名出售</div>
+            <h1>下一个"BOSS直聘"？<br>Agent经济爆发，<br>"agentzhipin.com"等你来造！</h1>
+            
+            <div class="domain-name">agentzhipin.com</div>
+            
+            <p class="subtitle">
+                AI Agent、智能体、数字员工……"Agent"已成为2025最火职业赛道。<br>
+                但专业Agent招聘平台还是空白！
+            </p>
+            
+            <div class="features">
+                <div class="feature-item">
+                    <div class="feature-icon">🎯</div>
+                    <div class="feature-text"><strong>agentzhipin.com</strong> + <strong>agentzhipin.cn</strong> 成套出售</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✅</div>
+                    <div class="feature-text">对标"bosszhipin"，品牌认知零成本</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✅</div>
+                    <div class="feature-text">.com+.cn双保险，锁定中文用户习惯</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✅</div>
+                    <div class="feature-text">即买即用，抢占"Agent直聘"品类第一入口</div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <p class="tagline">风口已来，域名即资产。<br><span class="tagline-accent">错过boss，别再错过agent。</span></p>
+                
+                <a href="mailto:ideacool@vip.qq.com?subject=域名购买咨询-agentzhipin.com" class="contact-btn">
+                    📩 立即联系购买
+                </a>
+                
+                <div class="email-display">ideacool@vip.qq.com</div>
+                
+                <p style="margin-top: 1.5rem; color: var(--muted);">拿下未来十年Agent招聘的流量高地。</p>
+            </div>
+            
+            <p class="footer-note">© 2025 AgentZhiPin Domain Sale. All rights reserved.</p>
+        </div>
+    </section>
+</body>
+</html>
